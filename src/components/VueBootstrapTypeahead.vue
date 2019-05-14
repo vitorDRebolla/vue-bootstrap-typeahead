@@ -12,7 +12,7 @@
         :class="`form-control ${inputClass}`"
         :placeholder="placeholder"
         :aria-label="placeholder"
-        :value="inputValue"
+        :value="value ? value : inputValue"
         @focus="isFocused = true"
         @blur="handleBlur"
         @input="handleInput($event.target.value)"
